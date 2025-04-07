@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Certifications - Ravindra Kumar Reddy</title>
+  <title>Books - Ravindra Kumar Reddy</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Roboto', sans-serif;
       margin: 0;
-      background: linear-gradient(to bottom right, #f0f8ff, #e6f7ff);
+      background: linear-gradient(to bottom right, #fefcea, #f1da36);
       color: #333;
     }
 
@@ -24,7 +24,6 @@
       margin: 0;
       font-size: 2rem;
     }
-
     header a {
       color: #ffd700;
       margin: 0 0.5rem;
@@ -56,20 +55,31 @@
       max-width: 900px;
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      animation: fadeIn 1s ease-in;
     }
 
     section h2 {
       color: #004080;
-      border-bottom: 2px solid #cce0ff;
+      border-bottom: 2px solid #f1da36;
       padding-bottom: 0.5rem;
     }
 
-    ul {
-      padding-left: 1.2rem;
+    .book {
+      margin-bottom: 1.5rem;
+      transition: transform 0.3s ease;
     }
 
-    li {
+    .book:hover {
+      transform: scale(1.02);
+    }
+
+    .book h3 {
       margin: 0.5rem 0;
+      color: #003366;
+    }
+
+    .book p {
+      margin: 0.3rem 0 0 0;
     }
 
     footer {
@@ -79,37 +89,43 @@
       padding: 1rem;
       margin-top: 2rem;
     }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
 <body>
-    <header>
-        <h1>Ravindra Kumar Reddy Donapati</h1>
-        <p>FullstackDev| AI | Cloud| Leadership</p>
-        <a href="mailto:ravi.swarchitect@gmail.com">📧 Email</a>
-        <a href="https://github.com/drkreddy" target="_blank">GitHub</a>
-      </header>
   <header>
-    <h1>My Certifications</h1>
+    <h1>Ravindra Kumar Reddy</h1>
   </header>
 
   <nav>
     <a href="index.html">Home</a>
-    <a href="resume.html">Resume</a>
-    <a href="books.html">Books</a>
     <a href="projects.html">Projects</a>
     <a href="certifications.html">Certifications</a>
+    <a href="books.html">Books</a>
   </nav>
 
   <section>
-    <h2>Certifications</h2>
-    <ul>
-      <li>Oracle Certified Java Programmer (OCJP)</li>
-      <li>Microsoft Certified: Azure Developer Associate</li>
-      <li>AWS Certified Solutions Architect – Associate</li>
-      <li>Spring Professional Certification</li>
-      <li>Scrum Master Certified (SMC)</li>
-      <!-- Add more certifications if needed -->
-    </ul>
+    <h2>Books by Ravindra</h2>
+
+    <div class="book">
+      <h3>Mastering Spring Boot</h3>
+      <p>A practical guide to building enterprise-grade applications using Spring Boot, covering REST APIs, microservices, and best practices.</p>
+    </div>
+
+    <div class="book">
+      <h3>React Native for Professionals</h3>
+      <p>This book walks you through building robust mobile apps with React Native, including native integrations, animations, and Expo.</p>
+    </div>
+
+    <div class="book">
+      <h3>AI for Personal Finance</h3>
+      <p>Explore how artificial intelligence can help you automate budgeting, saving, and making smart financial decisions with real-world tools.</p>
+    </div>
+
   </section>
 
   <footer>
