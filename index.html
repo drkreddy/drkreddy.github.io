@@ -86,6 +86,32 @@
       padding: 1rem;
       margin-top: 2rem;
     }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .skill-box {
+      background: #f0f8ff;
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    }
+
+    .skill-box img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+    }
+
+    .skill-box p {
+      margin: 0.5rem 0 0;
+      font-weight: bold;
+    }
   </style>
 
 </head>
@@ -109,24 +135,31 @@
   </section>
 
   <section>
-    <h2>Skills</h2>
-    <ul>
-      <li><strong>Languages:</strong> Java, Kotlin, Python, SQL, Go, JavaScript</li>
-      <li><strong>Frameworks:</strong> Spring Boot, Hibernate, ReactJS, VueJS</li>
-      <li><strong>Cloud & DevOps:</strong> AWS, Azure, Kubernetes, Docker, GoCD</li>
-      <li><strong>Tools:</strong> GitHub, Ansible, Camunda BPM, Kafka, Redis</li>
-    </ul>
+    <h2>Skills Overview</h2>
+    <div class="skills">
+      <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"><p>Java</p></div>
+      <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin"><p>Kotlin</p></div>
+      <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><p>Python</p></div>
+      <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL"><p>SQL</p></div>
+      <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Go"><p>Go</p></div>
+      <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><p>JavaScript</p></div>
+      <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot"><p>Spring Boot</p></div>
+      <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hibernate/hibernate-plain.svg" alt="Hibernate"><p>Hibernate</p></div>
+      <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="ReactJS"><p>ReactJS</p></div>
+      <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="NextJS"><p>NextJS</p></div>
+      <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS"><p>AWS</p></div>
+      <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure"><p>Azure</p></div>
+      <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"><p>Docker</p></div>
+      <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes"><p>Kubernetes</p></div>
+      <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="GoCD"><p>GoCD</p></div>
+      <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"><p>GitHub</p></div>
+      <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg" alt="Ansible"><p>Ansible</p></div>
+      <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/camunda/camunda-original.svg" alt="Camunda BPM"><p>Camunda BPM</p></div>
+      <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg" alt="Kafka"><p>Kafka</p></div>
+      <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis"><p>Redis</p></div>
+    </div>
   </section>
 
-  <section>
-    <h2>Certifications</h2>
-    <ul>
-      <li>AWS Certified Solutions Architect</li>
-      <li>Microsoft Certified Azure Administrator Associate</li>
-      <li>Microsoft Certified Azure Network Engineer Associate</li>
-      <li>Oracle Certified Professional Java Programmer</li>
-    </ul>
-  </section>
 
   <section>
     <h2>Experience</h2>
@@ -155,23 +188,6 @@
     </ul>
   </section>
 
-  <section>
-    <h2>Education</h2>
-    <ul>
-      <li><strong>B.Tech ICT</strong>, DAIICT – 73.2%</li>
-      <li><strong>Intermediate</strong>, Vijayawada – 93.8%</li>
-      <li><strong>10th</strong>, JNV MahaboobNagar – 84%</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Achievements</h2>
-    <ul>
-      <li>Certificate of Creativity at Sapient</li>
-      <li>NCC A Certificate Holder</li>
-      <li>All India Rank 179 in AIEEE</li>
-    </ul>
-  </section>
 
   <footer>
     <p>Built with ❤️ by Ravindra Kumar Reddy</p>
