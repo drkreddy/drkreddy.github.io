@@ -117,8 +117,15 @@
       background: white;
       padding: 2rem;
       border-radius: 10px;
-      max-width: 600px;
+      max-width: 90%;
+      height: 90%;
       text-align: center;
+    }
+
+    .modal-content iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
     }
 
     .close {
@@ -126,6 +133,10 @@
       cursor: pointer;
       font-size: 1.2rem;
       color: red;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 100;
     }
 
     @keyframes fadeIn {
@@ -155,6 +166,12 @@
 
   <section>
     <h2>Personal Projects</h2>
+
+    <div class="project">
+      <h3>AI-Powered Restaurant Menu</h3>
+      <p>An interactive single-page application and business model overview for an AI-driven restaurant menu, complete with data visualizations.</p>
+      <button class="view-more" onclick="openModal('aiMenuSpa')">View More</button>
+    </div>
 
     <div class="project">
       <h3>Money Matters</h3>
@@ -192,6 +209,7 @@
       const modalBody = document.getElementById('modal-body');
 
       const content = {
+        aiMenuSpa: `<iframe src="index.html" title="AI Restaurant Business Model SPA"></iframe>`,
         moneyMatters: `<h3>Money Matters</h3><p>This app helps users track their income and expenses, get AI-driven savings tips, and visualize budgets with charts.</p>`,
         loanPredictor: `<h3>Loan Eligibility Predictor</h3><p>Uses machine learning to determine loan approval chances based on income, credit score, and employment data.</p>`,
         devopsDashboard: `<h3>DevOps Dashboard</h3><p>Real-time dashboard for infrastructure and deployment insights with alerting capabilities.</p>`
