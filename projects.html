@@ -170,7 +170,7 @@
     <div class="project">
       <h3>AI-Powered Restaurant Menu</h3>
       <p>An interactive single-page application and business model overview for an AI-driven restaurant menu, complete with data visualizations.</p>
-      <button class="view-more" onclick="openModal('aiMenuSpa')">View More</button>
+      <button class="view-more" onclick="window.open('index.html', '_blank')">View More</button>
     </div>
 
     <div class="project">
@@ -209,7 +209,6 @@
       const modalBody = document.getElementById('modal-body');
 
       const content = {
-        aiMenuSpa: `<iframe src="index.html" title="AI Restaurant Business Model SPA"></iframe>`,
         moneyMatters: `<h3>Money Matters</h3><p>This app helps users track their income and expenses, get AI-driven savings tips, and visualize budgets with charts.</p>`,
         loanPredictor: `<h3>Loan Eligibility Predictor</h3><p>Uses machine learning to determine loan approval chances based on income, credit score, and employment data.</p>`,
         devopsDashboard: `<h3>DevOps Dashboard</h3><p>Real-time dashboard for infrastructure and deployment insights with alerting capabilities.</p>`
